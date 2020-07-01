@@ -1,0 +1,842 @@
+@prefix : <http://www.pizza/odontologies/pizza.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.pizza/odontologies/pizza.owl> .
+
+<http://www.pizza/odontologies/pizza.owl> rdf:type owl:Ontology ;
+                                           rdfs:comment "La ontología de la pizza que describe varias pizzas basadas en sus ingredientes."@es ,
+                                                        "The pizza ontology that describes various pizzas based on their toppings" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.pizza/odontologies/pizza.owl#hasBase
+:hasBase rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasIngredient ;
+         owl:inverseOf :isBaseOf ;
+         rdfs:domain :Pizza ;
+         rdfs:range :PizzaBase ;
+         rdfs:comment "Tiene una base"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin
+:hasCountryOfOrigin rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Representa el país de origen"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasIngredient
+:hasIngredient rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isIngredientOf ;
+               rdf:type owl:TransitiveProperty ;
+               rdfs:comment "Tiene ingredientes"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasSpiciness
+:hasSpiciness rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:range :SpicinessValuePartition .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasTopping
+:hasTopping rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasIngredient ;
+            owl:inverseOf :isToppingOf ;
+            rdfs:domain :Pizza ;
+            rdfs:range :PizzaTopping ;
+            rdfs:comment "Tiene un adicional"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#isBaseOf
+:isBaseOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :isIngredientOf ;
+          rdfs:domain :PizzaBase ;
+          rdfs:range :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#isIngredientOf
+:isIngredientOf rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:comment "Inverso de tiene. Para decir es un ingrediente de."@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#isToppingOf
+:isToppingOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :isIngredientOf .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue
+:hasCalorificContentValue rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:comment "Defined value calorific" .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasCookingTime
+:hasCookingTime rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:comment "Tiempo de cocción" .
+
+
+###  http://www.pizza/odontologies/pizza.owl#hasToBake
+:hasToBake rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza
+:AmericanaHotPizza rdf:type owl:Class ;
+                   rdfs:subClassOf :NamedPizza ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTopping ;
+                                     owl:someValuesFrom :JalopenoPepperTopping
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTopping ;
+                                     owl:someValuesFrom :MozzarellaTopping
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTopping ;
+                                     owl:someValuesFrom :PepperoniTopping
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTopping ;
+                                     owl:someValuesFrom :TomatoTopping
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasTopping ;
+                                     owl:allValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( :JalopenoPepperTopping
+                                                                       :MozzarellaTopping
+                                                                       :PepperoniTopping
+                                                                       :TomatoTopping
+                                                                     )
+                                                       ]
+                                   ] ;
+                   rdfs:comment "A pizza that only has Mozarella and Tomato toppings"@en ,
+                                "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#AmericanaPizza
+:AmericanaPizza rdf:type owl:Class ;
+                rdfs:subClassOf :NamedPizza ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTopping ;
+                                  owl:someValuesFrom :MozzarellaTopping
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTopping ;
+                                  owl:someValuesFrom :PepperoniTopping
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTopping ;
+                                  owl:someValuesFrom :TomatoTopping
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTopping ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( :MozzarellaTopping
+                                                                    :PepperoniTopping
+                                                                    :TomatoTopping
+                                                                  )
+                                                    ]
+                                ] ;
+                rdfs:comment "A pizza that only has Mozarella and Tomato toppings"@en ,
+                             "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#AnchovyTopping
+:AnchovyTopping rdf:type owl:Class ;
+                rdfs:subClassOf :SeafoodTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#BasilTopping
+:BasilTopping rdf:type owl:Class ;
+              rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping
+:BlackRaspberryTopping rdf:type owl:Class ;
+                       rdfs:subClassOf :RaspberryTopping ;
+                       owl:disjointWith :RedRaspberryTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#CaperTopping
+:CaperTopping rdf:type owl:Class ;
+              rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#CheeseTopping
+:CheeseTopping rdf:type owl:Class ;
+               rdfs:subClassOf :PizzaTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#CheesyPizza
+:CheesyPizza rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasTopping ;
+                                                          owl:someValuesFrom :CheeseTopping
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Country
+:Country rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :America
+                                           :England
+                                           :France
+                                           :Germany
+                                           :Italy
+                                         )
+                             ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#DeepPanBase
+:DeepPanBase rdf:type owl:Class ;
+             rdfs:subClassOf :PizzaBase ;
+             owl:disjointWith :ThinAndCrispyBase .
+
+
+###  http://www.pizza/odontologies/pizza.owl#FourCheesePizza
+:FourCheesePizza rdf:type owl:Class ;
+                 rdfs:subClassOf :NamedPizza ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTopping ;
+                                   owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :CheeseTopping
+                                 ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza
+:FourSeasonsPizza rdf:type owl:Class ;
+                  rdfs:subClassOf :NamedPizza ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :AnchovyTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :BasilTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :MozzarellaTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :MushroomsTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :RedPepperTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :SalamiTopping
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIngredient ;
+                                    owl:someValuesFrom :TomatoTopping
+                                  ] ;
+                  rdfs:comment "Pizza 4 estaciones su ingrediente es la anchoa, campiñones y pimientos"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#FruitsTopping
+:FruitsTopping rdf:type owl:Class ;
+               rdfs:subClassOf :PizzaTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#GarlicTopping
+:GarlicTopping rdf:type owl:Class ;
+               rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#GreenPepperTopping
+:GreenPepperTopping rdf:type owl:Class ;
+                    rdfs:subClassOf :PepperTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#HamTopping
+:HamTopping rdf:type owl:Class ;
+            rdfs:subClassOf :MeatTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#HighCaloriePizza
+:HighCaloriePizza rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasCalorificContentValue ;
+                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                    owl:onDatatype xsd:integer ;
+                                                                                    owl:withRestrictions ( [ xsd:minInclusive 400
+                                                                                                           ]
+                                                                                                         )
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Pizza ;
+                  rdfs:comment "HighCaloriePizza that has a calorific value higher than or equal to 400"@en .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Hot
+:Hot rdf:type owl:Class ;
+     rdfs:subClassOf :SpicinessValuePartition .
+
+
+###  http://www.pizza/odontologies/pizza.owl#InterestingPizza
+:InterestingPizza rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasTopping ;
+                                                               owl:minCardinality "3"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping
+:JalopenoPepperTopping rdf:type owl:Class ;
+                       rdfs:subClassOf :PepperTopping ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasSpiciness ;
+                                         owl:someValuesFrom :Hot
+                                       ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#KiwiTooping
+:KiwiTooping rdf:type owl:Class ;
+             rdfs:subClassOf :FruitsTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#LowCaloriePizza
+:LowCaloriePizza rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasCalorificContentValue ;
+                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:integer ;
+                                                                                   owl:withRestrictions ( [ xsd:maxExclusive 400
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Pizza ;
+                 rdfs:comment "HighCaloriePizza that has a calorific value less than  400"@en .
+
+
+###  http://www.pizza/odontologies/pizza.owl#MargheritaPizza
+:MargheritaPizza rdf:type owl:Class ;
+                 rdfs:subClassOf :NamedPizza ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTopping ;
+                                   owl:someValuesFrom :MozzarellaTopping
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTopping ;
+                                   owl:someValuesFrom :TomatoTopping
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasTopping ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :MozzarellaTopping
+                                                                     :TomatoTopping
+                                                                   )
+                                                     ]
+                                 ] ;
+                 rdfs:comment "A pizza that only has Mozarella and Tomato toppings"@en ,
+                              "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#MarinaraPizza
+:MarinaraPizza rdf:type owl:Class ;
+               rdfs:subClassOf :NamedPizza ,
+                               :NoCheesyPizza ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :BasilTopping
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :GarlicTopping
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :OliveTopping
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :OnionTopping
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :TomatoTopping
+                               ] ;
+               rdfs:comment "Pizza sin queso y baja en calorias"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#MeatTopping
+:MeatTopping rdf:type owl:Class ;
+             rdfs:subClassOf :PizzaTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :SpicinessValuePartition .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Mild
+:Mild rdf:type owl:Class ;
+      rdfs:subClassOf :SpicinessValuePartition .
+
+
+###  http://www.pizza/odontologies/pizza.owl#MozzarellaTopping
+:MozzarellaTopping rdf:type owl:Class ;
+                   rdfs:subClassOf :CheeseTopping ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasSpiciness ;
+                                     owl:someValuesFrom :Mild
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasCountryOfOrigin ;
+                                     owl:hasValue :Italy
+                                   ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#MushroomsTopping
+:MushroomsTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :MeatTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#NamedPizza
+:NamedPizza rdf:type owl:Class ;
+            rdfs:subClassOf :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#NoCheesyPizza
+:NoCheesyPizza rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                          [ rdf:type owl:Class ;
+                                                            owl:complementOf :CheesyPizza
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza
+:NonVegetarianPizza rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:complementOf :VegetarianPizza
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#OliveTopping
+:OliveTopping rdf:type owl:Class ;
+              rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#OnionTopping
+:OnionTopping rdf:type owl:Class ;
+              rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#OrangeTopping
+:OrangeTopping rdf:type owl:Class ;
+               rdfs:subClassOf :FruitsTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ParmezanTopping
+:ParmezanTopping rdf:type owl:Class ;
+                 rdfs:subClassOf :CheeseTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PepperTopping
+:PepperTopping rdf:type owl:Class ;
+               rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PepperoniTopping
+:PepperoniTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :MeatTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping
+:PhiladelphiaCreamTopping rdf:type owl:Class ;
+                          rdfs:subClassOf :CheeseTopping ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasCountryOfOrigin ;
+                                            owl:hasValue :America
+                                          ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza
+:PhiladelphiaPizza rdf:type owl:Class ;
+                   rdfs:subClassOf :NamedPizza ;
+                   rdfs:comment "Pizza de frutas con queso de philadelphia"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Pizza
+:Pizza rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasBase ;
+                         owl:someValuesFrom :PizzaBase
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasCalorificContentValue ;
+                         owl:someValuesFrom xsd:integer
+                       ] .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PizzaBase
+:PizzaBase rdf:type owl:Class ;
+           owl:disjointWith :UnclosedPizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PizzaTopping
+:PizzaTopping rdf:type owl:Class ;
+              owl:disjointWith :UnclosedPizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#PrawnTopping
+:PrawnTopping rdf:type owl:Class ;
+              rdfs:subClassOf :SeafoodTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping
+:ProbeInconsistentTopping rdf:type owl:Class ;
+                          rdfs:subClassOf :CheeseTopping ;
+                          rdfs:comment "This class should be inconsistent when the ontology is classified.”"@en .
+
+
+###  http://www.pizza/odontologies/pizza.owl#RaspberryTopping
+:RaspberryTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :FruitsTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#RedPepperTopping
+:RedPepperTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :PepperTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping
+:RedRaspberryTopping rdf:type owl:Class ;
+                     rdfs:subClassOf :RaspberryTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SalamiTopping
+:SalamiTopping rdf:type owl:Class ;
+               rdfs:subClassOf :MeatTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SeafoodTopping
+:SeafoodTopping rdf:type owl:Class ;
+                rdfs:subClassOf :PizzaTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SohoPizza
+:SohoPizza rdf:type owl:Class ;
+           rdfs:subClassOf :NamedPizza ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopping ;
+                             owl:someValuesFrom :MozzarellaTopping
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopping ;
+                             owl:someValuesFrom :OliveTopping
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopping ;
+                             owl:someValuesFrom :ParmezanTopping
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopping ;
+                             owl:someValuesFrom :TomatoTopping
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopping ;
+                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :MozzarellaTopping
+                                                               :OliveTopping
+                                                               :ParmezanTopping
+                                                               :TomatoTopping
+                                                             )
+                                               ]
+                           ] ;
+           rdfs:comment "A pizza that only has Mozarella and Tomato toppings"@en ,
+                        "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition
+:SpicinessValuePartition rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Class ;
+                                               owl:unionOf ( :Hot
+                                                             :Medium
+                                                             :Mild
+                                                           )
+                                             ] ;
+                         rdfs:subClassOf :ValuePartition .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping
+:SpicyBeefTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :MeatTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#SpicyPizza
+:SpicyPizza rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasTopping ;
+                                                         owl:someValuesFrom [ owl:intersectionOf ( :PizzaTopping
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty :hasSpiciness ;
+                                                                                                     owl:someValuesFrom :Hot
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :Pizza .
+
+
+###  http://www.pizza/odontologies/pizza.owl#StrawberryTopping
+:StrawberryTopping rdf:type owl:Class ;
+                   rdfs:subClassOf :FruitsTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase
+:ThinAndCrispyBase rdf:type owl:Class ;
+                   rdfs:subClassOf :PizzaBase .
+
+
+###  http://www.pizza/odontologies/pizza.owl#TomatoTopping
+:TomatoTopping rdf:type owl:Class ;
+               rdfs:subClassOf :VegetableTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#TunaTopping
+:TunaTopping rdf:type owl:Class ;
+             rdfs:subClassOf :SeafoodTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#UnclosedPizza
+:UnclosedPizza rdf:type owl:Class ;
+               rdfs:subClassOf :CheesyPizza ,
+                               :NamedPizza ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTopping ;
+                                 owl:someValuesFrom :MozzarellaTopping
+                               ] ;
+               rdfs:comment "Pizza with Mozarella"@es .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ValuePartition
+:ValuePartition rdf:type owl:Class .
+
+
+###  http://www.pizza/odontologies/pizza.owl#VegetableTopping
+:VegetableTopping rdf:type owl:Class ;
+                  rdfs:subClassOf :PizzaTopping .
+
+
+###  http://www.pizza/odontologies/pizza.owl#VegetarianPizza
+:VegetarianPizza rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Pizza
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasTopping ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :CheeseTopping
+                                                                                                :VegetableTopping
+                                                                                              )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.pizza/odontologies/pizza.owl#America
+:America rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.pizza/odontologies/pizza.owl#England
+:England rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons
+:ExampleFourSeasons rdf:type owl:NamedIndividual ,
+                             :FourSeasonsPizza ;
+                    :hasIngredient :ExampleFourSeasons ;
+                    :isIngredientOf :ExampleFourSeasons ;
+                    :hasCookingTime 10 ;
+                    :hasToBake 230 .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ExampleMargherita
+:ExampleMargherita rdf:type owl:NamedIndividual ,
+                            :LowCaloriePizza ,
+                            :MargheritaPizza ;
+                   :hasIngredient :ExampleMargherita ;
+                   :isIngredientOf :ExampleMargherita ;
+                   :hasCalorificContentValue 263 .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ExampleMarinara
+:ExampleMarinara rdf:type owl:NamedIndividual ,
+                          :LowCaloriePizza ,
+                          :MarinaraPizza ;
+                 :hasIngredient :ExampleMarinara ;
+                 :isIngredientOf :ExampleMarinara ;
+                 :hasCalorificContentValue 196 ;
+                 :hasCookingTime 15 ;
+                 :hasToBake 250 .
+
+
+###  http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza
+:ExamplePhiladelphiaPizza rdf:type owl:NamedIndividual ,
+                                   :LowCaloriePizza ,
+                                   :PhiladelphiaPizza ;
+                          :hasIngredient :ExamplePhiladelphiaPizza ;
+                          :isIngredientOf :ExamplePhiladelphiaPizza ;
+                          :hasCalorificContentValue 280 ;
+                          :hasCookingTime 14 ;
+                          :hasToBake 375 .
+
+
+###  http://www.pizza/odontologies/pizza.owl#France
+:France rdf:type owl:NamedIndividual ,
+                 :Country .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.pizza/odontologies/pizza.owl#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country ,
+                :MarinaraPizza .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AmericanaHotPizza
+                :AmericanaPizza
+                :MargheritaPizza
+                :SohoPizza
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AnchovyTopping
+                :PrawnTopping
+                :TunaTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CheeseTopping
+                :MeatTopping
+                :SeafoodTopping
+                :VegetableTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :GreenPepperTopping
+                :JalopenoPepperTopping
+                :RedPepperTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HamTopping
+                :MushroomsTopping
+                :PepperoniTopping
+                :SalamiTopping
+                :SpicyBeefTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HamTopping
+                :PepperoniTopping
+                :SalamiTopping
+                :SpicyBeefTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Hot
+                :Medium
+                :Mild
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :KiwiTooping
+                :OrangeTopping
+                :RaspberryTopping
+                :StrawberryTopping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Pizza
+                :PizzaBase
+                :PizzaTopping
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

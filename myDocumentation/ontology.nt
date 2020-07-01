@@ -1,0 +1,910 @@
+<http://www.pizza/odontologies/pizza.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.pizza/odontologies/pizza.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "La ontología de la pizza que describe varias pizzas basadas en sus ingredientes."@es .
+<http://www.pizza/odontologies/pizza.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "The pizza ontology that describes various pizzas based on their toppings" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.pizza/odontologies/pizza.owl#hasBase
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.pizza/odontologies/pizza.owl#isBaseOf> .
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+<http://www.pizza/odontologies/pizza.owl#hasBase> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene una base"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin
+<http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el país de origen"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasIngredient
+<http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> .
+<http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene ingredientes"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasSpiciness
+<http://www.pizza/odontologies/pizza.owl#hasSpiciness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasSpiciness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasSpiciness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasTopping
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.pizza/odontologies/pizza.owl#isToppingOf> .
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+<http://www.pizza/odontologies/pizza.owl#hasTopping> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene un adicional"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#isBaseOf
+<http://www.pizza/odontologies/pizza.owl#isBaseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#isBaseOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> .
+<http://www.pizza/odontologies/pizza.owl#isBaseOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+<http://www.pizza/odontologies/pizza.owl#isBaseOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#isIngredientOf
+<http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverso de tiene. Para decir es un ingrediente de."@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#isToppingOf
+<http://www.pizza/odontologies/pizza.owl#isToppingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.pizza/odontologies/pizza.owl#isToppingOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue
+<http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Defined value calorific" .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasCookingTime
+<http://www.pizza/odontologies/pizza.owl#hasCookingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCookingTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCookingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasCookingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiempo de cocción" .
+# 
+# http://www.pizza/odontologies/pizza.owl#hasToBake
+<http://www.pizza/odontologies/pizza.owl#hasToBake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasToBake> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.pizza/odontologies/pizza.owl#hasToBake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "A pizza that only has Mozarella and Tomato toppings"@en .
+<http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#AmericanaPizza
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "A pizza that only has Mozarella and Tomato toppings"@en .
+<http://www.pizza/odontologies/pizza.owl#AmericanaPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#AnchovyTopping
+<http://www.pizza/odontologies/pizza.owl#AnchovyTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#AnchovyTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SeafoodTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#BasilTopping
+<http://www.pizza/odontologies/pizza.owl#BasilTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#BasilTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping
+<http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#RaspberryTopping> .
+<http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#CaperTopping
+<http://www.pizza/odontologies/pizza.owl#CaperTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#CaperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#CheeseTopping
+<http://www.pizza/odontologies/pizza.owl#CheeseTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#CheeseTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#CheesyPizza
+<http://www.pizza/odontologies/pizza.owl#CheesyPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#CheesyPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.pizza/odontologies/pizza.owl#Country
+<http://www.pizza/odontologies/pizza.owl#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#Country> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#oneOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#America> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#England> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#France> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Germany> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Italy> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.pizza/odontologies/pizza.owl#DeepPanBase
+<http://www.pizza/odontologies/pizza.owl#DeepPanBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#DeepPanBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+<http://www.pizza/odontologies/pizza.owl#DeepPanBase> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase> .
+# 
+# http://www.pizza/odontologies/pizza.owl#FourCheesePizza
+<http://www.pizza/odontologies/pizza.owl#FourCheesePizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#FourCheesePizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#FourCheesePizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "4"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#AnchovyTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#BasilTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MushroomsTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#RedPepperTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#SalamiTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasIngredient> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Pizza 4 estaciones su ingrediente es la anchoa, campiñones y pimientos"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#FruitsTopping
+<http://www.pizza/odontologies/pizza.owl#FruitsTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#FruitsTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#GarlicTopping
+<http://www.pizza/odontologies/pizza.owl#GarlicTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#GarlicTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#GreenPepperTopping
+<http://www.pizza/odontologies/pizza.owl#GreenPepperTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#GreenPepperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PepperTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#HamTopping
+<http://www.pizza/odontologies/pizza.owl#HamTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#HamTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#HighCaloriePizza
+<http://www.pizza/odontologies/pizza.owl#HighCaloriePizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#HighCaloriePizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid40 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2001/XMLSchema#minInclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#HighCaloriePizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+<http://www.pizza/odontologies/pizza.owl#HighCaloriePizza> <http://www.w3.org/2000/01/rdf-schema#comment> "HighCaloriePizza that has a calorific value higher than or equal to 400"@en .
+# 
+# http://www.pizza/odontologies/pizza.owl#Hot
+<http://www.pizza/odontologies/pizza.owl#Hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#Hot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> .
+# 
+# http://www.pizza/odontologies/pizza.owl#InterestingPizza
+<http://www.pizza/odontologies/pizza.owl#InterestingPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#InterestingPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid46 <http://www.w3.org/2002/07/owl#minCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#InterestingPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping
+<http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PepperTopping> .
+<http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasSpiciness> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#Hot> .
+# 
+# http://www.pizza/odontologies/pizza.owl#KiwiTooping
+<http://www.pizza/odontologies/pizza.owl#KiwiTooping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#KiwiTooping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#FruitsTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#LowCaloriePizza
+<http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid52 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2001/XMLSchema#maxExclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+<http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> <http://www.w3.org/2000/01/rdf-schema#comment> "HighCaloriePizza that has a calorific value less than  400"@en .
+# 
+# http://www.pizza/odontologies/pizza.owl#MargheritaPizza
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/2002/07/owl#unionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "A pizza that only has Mozarella and Tomato toppings"@en .
+<http://www.pizza/odontologies/pizza.owl#MargheritaPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#MarinaraPizza
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NoCheesyPizza> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#BasilTopping> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#GarlicTopping> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#OliveTopping> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#OnionTopping> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#MarinaraPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Pizza sin queso y baja en calorias"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#MeatTopping
+<http://www.pizza/odontologies/pizza.owl#MeatTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#MeatTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#Medium
+<http://www.pizza/odontologies/pizza.owl#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#Medium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> .
+# 
+# http://www.pizza/odontologies/pizza.owl#Mild
+<http://www.pizza/odontologies/pizza.owl#Mild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#Mild> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> .
+# 
+# http://www.pizza/odontologies/pizza.owl#MozzarellaTopping
+<http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+<http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasSpiciness> .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#Mild> .
+<http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin> .
+_:genid68 <http://www.w3.org/2002/07/owl#hasValue> <http://www.pizza/odontologies/pizza.owl#Italy> .
+# 
+# http://www.pizza/odontologies/pizza.owl#MushroomsTopping
+<http://www.pizza/odontologies/pizza.owl#MushroomsTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#MushroomsTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#NamedPizza
+<http://www.pizza/odontologies/pizza.owl#NamedPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#NamedPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#NoCheesyPizza
+<http://www.pizza/odontologies/pizza.owl#NoCheesyPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#NoCheesyPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid71 <http://www.w3.org/2002/07/owl#complementOf> <http://www.pizza/odontologies/pizza.owl#CheesyPizza> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#NoCheesyPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza
+<http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid75 <http://www.w3.org/2002/07/owl#complementOf> <http://www.pizza/odontologies/pizza.owl#VegetarianPizza> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#OliveTopping
+<http://www.pizza/odontologies/pizza.owl#OliveTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#OliveTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#OnionTopping
+<http://www.pizza/odontologies/pizza.owl#OnionTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#OnionTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#OrangeTopping
+<http://www.pizza/odontologies/pizza.owl#OrangeTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#OrangeTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#FruitsTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ParmezanTopping
+<http://www.pizza/odontologies/pizza.owl#ParmezanTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#ParmezanTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PepperTopping
+<http://www.pizza/odontologies/pizza.owl#PepperTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PepperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PepperoniTopping
+<http://www.pizza/odontologies/pizza.owl#PepperoniTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PepperoniTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin> .
+_:genid77 <http://www.w3.org/2002/07/owl#hasValue> <http://www.pizza/odontologies/pizza.owl#America> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Pizza de frutas con queso de philadelphia"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#Pizza
+<http://www.pizza/odontologies/pizza.owl#Pizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.pizza/odontologies/pizza.owl#Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasBase> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+<http://www.pizza/odontologies/pizza.owl#Pizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PizzaBase
+<http://www.pizza/odontologies/pizza.owl#PizzaBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PizzaBase> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.pizza/odontologies/pizza.owl#UnclosedPizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PizzaTopping
+<http://www.pizza/odontologies/pizza.owl#PizzaTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PizzaTopping> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.pizza/odontologies/pizza.owl#UnclosedPizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#PrawnTopping
+<http://www.pizza/odontologies/pizza.owl#PrawnTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#PrawnTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SeafoodTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping
+<http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+<http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping> <http://www.w3.org/2000/01/rdf-schema#comment> "This class should be inconsistent when the ontology is classified.”"@en .
+# 
+# http://www.pizza/odontologies/pizza.owl#RaspberryTopping
+<http://www.pizza/odontologies/pizza.owl#RaspberryTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#RaspberryTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#FruitsTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#RedPepperTopping
+<http://www.pizza/odontologies/pizza.owl#RedPepperTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#RedPepperTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PepperTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping
+<http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#RaspberryTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#SalamiTopping
+<http://www.pizza/odontologies/pizza.owl#SalamiTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SalamiTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#SeafoodTopping
+<http://www.pizza/odontologies/pizza.owl#SeafoodTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SeafoodTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#SohoPizza
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#OliveTopping> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#ParmezanTopping> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid84 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid85 <http://www.w3.org/2002/07/owl#unionOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#OliveTopping> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#ParmezanTopping> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#TomatoTopping> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "A pizza that only has Mozarella and Tomato toppings"@en .
+<http://www.pizza/odontologies/pizza.owl#SohoPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Una pizza que solo tiene Mozarella y Coberturas de tomate"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition
+<http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid90 <http://www.w3.org/2002/07/owl#unionOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Hot> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Medium> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Mild> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#ValuePartition> .
+# 
+# http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping
+<http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#SpicyPizza
+<http://www.pizza/odontologies/pizza.owl#SpicyPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SpicyPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasSpiciness> .
+_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#Hot> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#SpicyPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+# 
+# http://www.pizza/odontologies/pizza.owl#StrawberryTopping
+<http://www.pizza/odontologies/pizza.owl#StrawberryTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#StrawberryTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#FruitsTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase
+<http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+# 
+# http://www.pizza/odontologies/pizza.owl#TomatoTopping
+<http://www.pizza/odontologies/pizza.owl#TomatoTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#TomatoTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#TunaTopping
+<http://www.pizza/odontologies/pizza.owl#TunaTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#TunaTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#SeafoodTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#UnclosedPizza
+<http://www.pizza/odontologies/pizza.owl#UnclosedPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#UnclosedPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#CheesyPizza> .
+<http://www.pizza/odontologies/pizza.owl#UnclosedPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#NamedPizza> .
+<http://www.pizza/odontologies/pizza.owl#UnclosedPizza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.pizza/odontologies/pizza.owl#MozzarellaTopping> .
+<http://www.pizza/odontologies/pizza.owl#UnclosedPizza> <http://www.w3.org/2000/01/rdf-schema#comment> "Pizza with Mozarella"@es .
+# 
+# http://www.pizza/odontologies/pizza.owl#ValuePartition
+<http://www.pizza/odontologies/pizza.owl#ValuePartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.pizza/odontologies/pizza.owl#VegetableTopping
+<http://www.pizza/odontologies/pizza.owl#VegetableTopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#VegetableTopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+# 
+# http://www.pizza/odontologies/pizza.owl#VegetarianPizza
+<http://www.pizza/odontologies/pizza.owl#VegetarianPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.pizza/odontologies/pizza.owl#VegetarianPizza> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://www.pizza/odontologies/pizza.owl#hasTopping> .
+_:genid105 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid106 <http://www.w3.org/2002/07/owl#unionOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.pizza/odontologies/pizza.owl#America
+<http://www.pizza/odontologies/pizza.owl#America> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#America> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#Country> .
+# 
+# http://www.pizza/odontologies/pizza.owl#England
+<http://www.pizza/odontologies/pizza.owl#England> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#England> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#Country> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> .
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> .
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.pizza/odontologies/pizza.owl#hasCookingTime> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons> <http://www.pizza/odontologies/pizza.owl#hasToBake> "230"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ExampleMargherita
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#MargheritaPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.pizza/odontologies/pizza.owl#ExampleMargherita> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.pizza/odontologies/pizza.owl#ExampleMargherita> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMargherita> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> "263"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ExampleMarinara
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#MarinaraPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.pizza/odontologies/pizza.owl#ExampleMarinara> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.pizza/odontologies/pizza.owl#ExampleMarinara> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> "196"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.pizza/odontologies/pizza.owl#hasCookingTime> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.pizza/odontologies/pizza.owl#ExampleMarinara> <http://www.pizza/odontologies/pizza.owl#hasToBake> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#LowCaloriePizza> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.pizza/odontologies/pizza.owl#hasIngredient> <http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.pizza/odontologies/pizza.owl#isIngredientOf> <http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue> "280"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.pizza/odontologies/pizza.owl#hasCookingTime> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza> <http://www.pizza/odontologies/pizza.owl#hasToBake> "375"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.pizza/odontologies/pizza.owl#France
+<http://www.pizza/odontologies/pizza.owl#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#Country> .
+# 
+# http://www.pizza/odontologies/pizza.owl#Germany
+<http://www.pizza/odontologies/pizza.owl#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#Country> .
+# 
+# http://www.pizza/odontologies/pizza.owl#Italy
+<http://www.pizza/odontologies/pizza.owl#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.pizza/odontologies/pizza.owl#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#Country> .
+<http://www.pizza/odontologies/pizza.owl#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pizza/odontologies/pizza.owl#MarinaraPizza> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid110 <http://www.w3.org/2002/07/owl#members> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#AmericanaPizza> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MargheritaPizza> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SohoPizza> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid115 <http://www.w3.org/2002/07/owl#members> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#AnchovyTopping> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PrawnTopping> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#TunaTopping> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid119 <http://www.w3.org/2002/07/owl#members> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#CheeseTopping> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MeatTopping> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SeafoodTopping> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#VegetableTopping> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid124 <http://www.w3.org/2002/07/owl#members> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#GreenPepperTopping> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#RedPepperTopping> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid128 <http://www.w3.org/2002/07/owl#members> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#HamTopping> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#MushroomsTopping> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SalamiTopping> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid134 <http://www.w3.org/2002/07/owl#members> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#HamTopping> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PepperoniTopping> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SalamiTopping> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid139 <http://www.w3.org/2002/07/owl#members> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Hot> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Medium> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Mild> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid143 <http://www.w3.org/2002/07/owl#members> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#KiwiTooping> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#OrangeTopping> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#RaspberryTopping> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#StrawberryTopping> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid148 <http://www.w3.org/2002/07/owl#members> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#Pizza> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PizzaBase> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.pizza/odontologies/pizza.owl#PizzaTopping> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

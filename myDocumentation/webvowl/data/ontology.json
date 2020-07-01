@@ -1,0 +1,2474 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.pizza/odontologies/pizza.owl", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.pizza/odontologies/pizza.owl",
+    "comments" : {
+      "es" : "La ontología de la pizza que describe varias pizzas basadas en sus ingredientes.",
+      "undefined" : "The pizza ontology that describes various pizzas based on their toppings"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "72",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SpicyBeefTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpicyBeefTopping"
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#VegetableTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetableTopping"
+    },
+    "subClasses" : [ "22", "23", "24", "25", "26", "27", "28" ],
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#LowCaloriePizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowCaloriePizza"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExamplePhiladelphiaPizza"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExampleMarinara",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExampleMarinara"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExampleMargherita",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExampleMargherita"
+      }
+    } ],
+    "intersection" : [ "2" ],
+    "comment" : {
+      "en" : "HighCaloriePizza that has a calorific value less than  400"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SalamiTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SalamiTopping"
+    },
+    "id" : "47",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#GreenPepperTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GreenPepperTopping"
+    },
+    "id" : "37",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PhiladelphiaCreamTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhiladelphiaCreamTopping"
+    },
+    "id" : "42",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PizzaBase",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PizzaBase"
+    },
+    "subClasses" : [ "57", "58" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#TomatoTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TomatoTopping"
+    },
+    "id" : "25",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#AnchovyTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnchovyTopping"
+    },
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#RedPepperTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RedPepperTopping"
+    },
+    "id" : "55",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SpicyPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpicyPizza"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#Country",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#France",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "France"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#Italy",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "Italy"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#Germany",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "Germany"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#England",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "England"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#America",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "America"
+      }
+    } ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#BlackRaspberryTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BlackRaspberryTopping"
+    },
+    "id" : "74",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#NoCheesyPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NoCheesyPizza"
+    },
+    "subClasses" : [ "60" ],
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#FourCheesePizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FourCheesePizza"
+    },
+    "id" : "79",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#ParmezanTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParmezanTopping"
+    },
+    "id" : "65",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#OrangeTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrangeTopping"
+    },
+    "id" : "80",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#GarlicTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GarlicTopping"
+    },
+    "id" : "23",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#MarinaraPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MarinaraPizza"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExampleMarinara",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExampleMarinara"
+      }
+    }, {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#Italy",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "Italy"
+      }
+    } ],
+    "comment" : {
+      "es" : "Pizza sin queso y baja en calorias"
+    },
+    "id" : "60",
+    "superClasses" : [ "4", "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PepperTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PepperTopping"
+    },
+    "subClasses" : [ "55", "35", "37" ],
+    "id" : "22",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#InterestingPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterestingPizza"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#CaperTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CaperTopping"
+    },
+    "id" : "26",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PhiladelphiaPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhiladelphiaPizza"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExamplePhiladelphiaPizza",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExamplePhiladelphiaPizza"
+      }
+    } ],
+    "comment" : {
+      "es" : "Pizza de frutas con queso de philadelphia"
+    },
+    "id" : "87",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#Mild",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mild"
+    },
+    "id" : "88",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#OnionTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnionTopping"
+    },
+    "id" : "27",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#MozzarellaTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MozzarellaTopping"
+    },
+    "id" : "63",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SohoPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SohoPizza"
+    },
+    "comment" : {
+      "en" : "A pizza that only has Mozarella and Tomato toppings",
+      "es" : "Una pizza que solo tiene Mozarella y Coberturas de tomate"
+    },
+    "id" : "103",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#ProbeInconsistentTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProbeInconsistentTopping"
+    },
+    "comment" : {
+      "en" : "This class should be inconsistent when the ontology is classified.”"
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#Hot",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hot"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#HighCaloriePizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighCaloriePizza"
+    },
+    "intersection" : [ "2" ],
+    "comment" : {
+      "en" : "HighCaloriePizza that has a calorific value higher than or equal to 400"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "12",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#MargheritaPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MargheritaPizza"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExampleMargherita",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExampleMargherita"
+      }
+    } ],
+    "comment" : {
+      "en" : "A pizza that only has Mozarella and Tomato toppings",
+      "es" : "Una pizza que solo tiene Mozarella y Coberturas de tomate"
+    },
+    "id" : "108",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#NamedPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NamedPizza"
+    },
+    "subClasses" : [ "87", "105", "103", "108", "60", "91", "93", "95", "79" ],
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#RaspberryTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RaspberryTopping"
+    },
+    "subClasses" : [ "84", "74" ],
+    "id" : "75",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#JalopenoPepperTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JalopenoPepperTopping"
+    },
+    "id" : "35",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#KiwiTooping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KiwiTooping"
+    },
+    "id" : "114",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#RedRaspberryTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RedRaspberryTopping"
+    },
+    "id" : "84",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PizzaTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PizzaTopping"
+    },
+    "subClasses" : [ "68", "40", "20", "81", "14" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#FruitsTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FruitsTopping"
+    },
+    "subClasses" : [ "80", "75", "114", "122" ],
+    "id" : "81",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#FourSeasonsPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FourSeasonsPizza"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.pizza/odontologies/pizza.owl#ExampleFourSeasons",
+      "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+      "labels" : {
+        "IRI-based" : "ExampleFourSeasons"
+      }
+    } ],
+    "comment" : {
+      "es" : "Pizza 4 estaciones su ingrediente es la anchoa, campiñones y pimientos"
+    },
+    "id" : "95",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#BasilTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BasilTopping"
+    },
+    "id" : "28",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#HamTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HamTopping"
+    },
+    "id" : "49",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#MushroomsTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MushroomsTopping"
+    },
+    "id" : "51",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PepperoniTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PepperoniTopping"
+    },
+    "id" : "44",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#NonVegetarianPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonVegetarianPizza"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#Medium",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Medium"
+    },
+    "id" : "111",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#CheeseTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CheeseTopping"
+    },
+    "subClasses" : [ "63", "65", "39", "42" ],
+    "id" : "40",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#PrawnTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrawnTopping"
+    },
+    "id" : "97",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#MeatTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeatTopping"
+    },
+    "subClasses" : [ "44", "13", "47", "49", "51" ],
+    "id" : "14",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#ValuePartition",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValuePartition"
+    },
+    "subClasses" : [ "19" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#StrawberryTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StrawberryTopping"
+    },
+    "id" : "122",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#AmericanaPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AmericanaPizza"
+    },
+    "comment" : {
+      "en" : "A pizza that only has Mozarella and Tomato toppings",
+      "es" : "Una pizza que solo tiene Mozarella y Coberturas de tomate"
+    },
+    "id" : "93",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#Pizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pizza"
+    },
+    "subClasses" : [ "1", "4", "6", "8", "10", "12", "16" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SpicinessValuePartition",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpicinessValuePartition"
+    },
+    "union" : [ "18", "88", "111" ],
+    "subClasses" : [ "18", "88", "111" ],
+    "attributes" : [ "union" ],
+    "id" : "19",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#UnclosedPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnclosedPizza"
+    },
+    "comment" : {
+      "es" : "Pizza with Mozarella"
+    },
+    "id" : "91",
+    "superClasses" : [ "101", "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#DeepPanBase",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeepPanBase"
+    },
+    "id" : "58",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#SeafoodTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeafoodTopping"
+    },
+    "subClasses" : [ "67", "97", "99" ],
+    "id" : "68",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#AmericanaHotPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AmericanaHotPizza"
+    },
+    "comment" : {
+      "en" : "A pizza that only has Mozarella and Tomato toppings",
+      "es" : "Una pizza que solo tiene Mozarella y Coberturas de tomate"
+    },
+    "id" : "105",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#OliveTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OliveTopping"
+    },
+    "id" : "24",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#VegetarianPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetarianPizza"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#CheesyPizza",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CheesyPizza"
+    },
+    "subClasses" : [ "91" ],
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#ThinAndCrispyBase",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThinAndCrispyBase"
+    },
+    "id" : "57",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#TunaTopping",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TunaTopping"
+    },
+    "id" : "99",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "30",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "72",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "115",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "118",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "120",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "134",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "159",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "170",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "176",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "30",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "22",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "22",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "40",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "14",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "14",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "14",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "14",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "53",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "22",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "56",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "40",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "40",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "2",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasCookingTime",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasCookingTime"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Tiempo de cocción"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasSpiciness",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasSpiciness"
+    },
+    "domain" : "72",
+    "attributes" : [ "functional", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasCountryOfOrigin",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasCountryOfOrigin"
+    },
+    "domain" : "30",
+    "comment" : {
+      "es" : "Representa el país de origen"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "30",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#isToppingOf",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isToppingOf"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "10",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "75",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasBase",
+    "inverse" : "86",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasBase"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "2",
+    "comment" : {
+      "es" : "Tiene una base"
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "10",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "10",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "10",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "10",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "68",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "68",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "101",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "10",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "10",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "10",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "10",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "19",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "19",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#isIngredientOf",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isIngredientOf"
+    },
+    "domain" : "30",
+    "subproperty" : [ "66", "86" ],
+    "comment" : {
+      "es" : "Inverso de tiene. Para decir es un ingrediente de."
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasIngredient",
+    "inverse" : "31",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasIngredient"
+    },
+    "domain" : "95",
+    "subproperty" : [ "32", "33" ],
+    "comment" : {
+      "es" : "Tiene ingredientes"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "120"
+  }, {
+    "range" : "20",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "68",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "57",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "20",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "68",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "14",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "20",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "99",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "97",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "84",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "99",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "93",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "93",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "93",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "135"
+  }, {
+    "range" : "122",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "122",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "75",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasSpiciness",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasSpiciness"
+    },
+    "domain" : "35",
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "139"
+  }, {
+    "range" : "88",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "75",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "80",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "13",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "47",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "88",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "111",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "44",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "51",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "13",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "13",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "47",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "13",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "47",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "55",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "35",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "44",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "55",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "103",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "103",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "91",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "103",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "103",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "162"
+  }, {
+    "range" : "91",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "91",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasBase",
+    "inverse" : "86",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasBase"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "2",
+    "comment" : {
+      "es" : "Tiene una base"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "165"
+  }, {
+    "range" : "21",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasCalorificContentValue",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "167",
+    "label" : {
+      "IRI-based" : "hasCalorificContentValue"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Defined value calorific"
+    },
+    "attributes" : [ "functional", "datatype", "someValues" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasSpiciness",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasSpiciness"
+    },
+    "domain" : "63",
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "60",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "170"
+  }, {
+    "range" : "21",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "56",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "60",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "60",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "60",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "108",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "176"
+  }, {
+    "range" : "122",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "60",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "108",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "179"
+  }, {
+    "range" : "81",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "81",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "56",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "81",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "20",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "81",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "103",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "108",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "103",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "103",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "105",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "105",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "105",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasTopping",
+    "inverse" : "66",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasTopping"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "105",
+    "comment" : {
+      "es" : "Tiene un adicional"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#hasToBake",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "hasToBake"
+    },
+    "domain" : "30",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "195"
+  }, {
+    "range" : "93",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "108",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "20",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "20",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "20",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "20",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "21",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "20",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "21",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "21",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "21",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://www.pizza/odontologies/pizza.owl#isBaseOf",
+    "baseIri" : "http://www.pizza/odontologies/pizza.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isBaseOf"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "56",
+    "attributes" : [ "object" ],
+    "id" : "86"
+  } ]
+}
